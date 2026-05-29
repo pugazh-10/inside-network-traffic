@@ -98,3 +98,9 @@ While analyzing HTTPS traffic, communication was encrypted using TLS.
 ### Security Relevance
 
 HTTPS helps prevent eavesdropping, data theft, and tampering during communication.
+
+
+## Investigations
+
+- Traffic Investigation 001 – Network Traffic Fundamentals
+- Traffic Investigation 002 – Domain Dependency Analysis
