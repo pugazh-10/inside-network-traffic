@@ -62,3 +62,21 @@ While analyzing network traffic, I observed TCP connections establishing communi
 ### Security Relevance
 
 Understanding TCP handshakes helps analysts identify abnormal network behavior, connection issues, and potential security threats.
+
+## HTTP Analysis
+
+![HTTP Analysis](screenshots/http-analysis.png)
+
+### Observation
+
+While analyzing HTTP traffic, requests and responses were visible in plain text.
+
+### Key Findings
+
+- HTTP communication is not encrypted.
+- Web requests can be inspected directly.
+- Sensitive information should not be transmitted over HTTP.
+
+### Security Relevance
+
+HTTP traffic can be intercepted and analyzed easily. This highlights the importance of HTTPS for secure communication.
