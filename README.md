@@ -104,3 +104,11 @@ HTTPS helps prevent eavesdropping, data theft, and tampering during communicatio
 
 - Traffic Investigation 001 – Network Traffic Fundamentals
 - Traffic Investigation 002 – Domain Dependency Analysis
+
+## Repository Structure
+
+- DNS Analysis
+- TCP Handshake Analysis
+- HTTP Traffic Analysis
+- HTTPS/TLS Analysis
+- Traffic Investigation Reports
