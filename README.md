@@ -42,3 +42,23 @@ Next Topics:
 - SOC Monitoring Concepts
 
 Cybersecurity Learning Journey 🚀
+
+
+## TCP Analysis
+
+![TCP Analysis](screenshots/tcp-handshake.png)
+
+### Observation
+
+While analyzing network traffic, I observed TCP connections establishing communication through the three-way handshake process.
+
+### Key Findings
+
+- SYN initiates the connection.
+- SYN-ACK acknowledges the request.
+- ACK completes the handshake.
+- TCP ensures reliable communication before data transfer begins.
+
+### Security Relevance
+
+Understanding TCP handshakes helps analysts identify abnormal network behavior, connection issues, and potential security threats.
