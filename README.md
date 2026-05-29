@@ -80,3 +80,21 @@ While analyzing HTTP traffic, requests and responses were visible in plain text.
 ### Security Relevance
 
 HTTP traffic can be intercepted and analyzed easily. This highlights the importance of HTTPS for secure communication.
+
+## HTTPS Analysis
+
+![HTTPS Analysis](screenshots/https-analysis.png)
+
+### Observation
+
+While analyzing HTTPS traffic, communication was encrypted using TLS.
+
+### Key Findings
+
+- HTTPS protects transmitted data.
+- Packet contents are not visible in plain text.
+- Encryption improves confidentiality and security.
+
+### Security Relevance
+
+HTTPS helps prevent eavesdropping, data theft, and tampering during communication.
