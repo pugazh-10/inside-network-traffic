@@ -1,114 +1,140 @@
-# Inside Network Traffic
+# 🔍 Inside Network Traffic
 
-A hands-on cybersecurity learning repository documenting my journey into Network Traffic Analysis using Wireshark.
+> A hands-on cybersecurity project focused on analyzing network traffic using Wireshark to understand communication patterns, protocols, and suspicious network behavior.
 
-## Objective
+![Wireshark](screenshots/dns-analysis.png)
 
-The goal of this repository is to understand how cybersecurity analysts inspect network traffic, identify communication patterns, and investigate suspicious activity through packet analysis.
+---
 
-## Tools Used
+## 📌 Project Overview
 
-- Wireshark
-- Windows
-- DNS Packet Analysis
+This project documents practical network traffic investigations performed using Wireshark.
 
-## DNS Analysis
+The objective is to develop the mindset and workflow of a Security Operations Center (SOC) analyst by examining packet captures, identifying protocols, and investigating network communications.
+
+---
+
+## 🎯 Learning Objectives
+
+- Understand packet-level network communication
+- Analyze DNS, TCP, HTTP, and HTTPS traffic
+- Investigate client-server interactions
+- Identify suspicious network behavior
+- Develop packet analysis skills used in SOC environments
+
+---
+
+## 🛠️ Tools Used
+
+| Tool | Purpose |
+|--------|----------|
+| Wireshark | Packet capture & analysis |
+| Windows | Analysis environment |
+| DNS | Name resolution analysis |
+| TCP | Transport-layer analysis |
+| HTTP/HTTPS | Web traffic investigation |
+
+---
+
+## 📂 Investigation Reports
+
+### Investigation 001 – DNS Traffic Analysis
+
+**Objective**
+- Examine DNS requests and responses
+- Identify domain resolution process
+- Understand DNS packet structure
+
+**Findings**
+- Observed DNS query traffic
+- Analyzed response records
+- Traced hostname resolution process
+
+📸 Screenshot:
 
 ![DNS Analysis](screenshots/dns-analysis.png)
 
-### Observation
+---
 
-While analyzing network traffic, I observed multiple DNS queries generated when accessing Google services.
+### Investigation 002 – HTTPS Traffic Analysis
 
-### Key Findings
+**Objective**
+- Inspect encrypted web communications
+- Analyze TLS handshakes
+- Identify source and destination communication
 
-- DNS translates domain names into IP addresses.
-- Every website visit generates DNS activity.
-- DNS traffic provides visibility into communication patterns.
-- Analysts frequently investigate DNS traffic during incident response.
+**Findings**
+- HTTPS sessions observed
+- TLS negotiation captured
+- Traffic metadata analyzed
 
-### Security Relevance
-
-DNS monitoring helps security analysts identify suspicious communication patterns, investigate incidents, and improve network visibility.
-
-## Learning Journey
-
-Next Topics:
-
-- TCP Three-Way Handshake
-- HTTP vs HTTPS
-- Packet Filtering
-- Wireshark Filters
-- SOC Monitoring Concepts
-
-Cybersecurity Learning Journey 🚀
-
-
-## TCP Analysis
-
-![TCP Analysis](screenshots/tcp-handshake.png)
-
-### Observation
-
-While analyzing network traffic, I observed TCP connections establishing communication through the three-way handshake process.
-
-### Key Findings
-
-- SYN initiates the connection.
-- SYN-ACK acknowledges the request.
-- ACK completes the handshake.
-- TCP ensures reliable communication before data transfer begins.
-
-### Security Relevance
-
-Understanding TCP handshakes helps analysts identify abnormal network behavior, connection issues, and potential security threats.
-
-## HTTP Analysis
-
-![HTTP Analysis](screenshots/http-analysis.png)
-
-### Observation
-
-While analyzing HTTP traffic, requests and responses were visible in plain text.
-
-### Key Findings
-
-- HTTP communication is not encrypted.
-- Web requests can be inspected directly.
-- Sensitive information should not be transmitted over HTTP.
-
-### Security Relevance
-
-HTTP traffic can be intercepted and analyzed easily. This highlights the importance of HTTPS for secure communication.
-
-## HTTPS Analysis
+📸 Screenshot:
 
 ![HTTPS Analysis](screenshots/https-analysis.png)
 
-### Observation
+---
 
-While analyzing HTTPS traffic, communication was encrypted using TLS.
+## 📊 Key Protocols Observed
 
-### Key Findings
+| Protocol | Purpose |
+|----------|---------|
+| DNS | Domain resolution |
+| TCP | Reliable communication |
+| HTTP | Web traffic |
+| HTTPS | Encrypted web traffic |
+| TLS | Secure communication |
 
-- HTTPS protects transmitted data.
-- Packet contents are not visible in plain text.
-- Encryption improves confidentiality and security.
+---
 
-### Security Relevance
+## 🔐 Cybersecurity Relevance
 
-HTTPS helps prevent eavesdropping, data theft, and tampering during communication.
+Network traffic analysis is a fundamental skill for:
 
+- SOC Analysts
+- Incident Responders
+- Threat Hunters
+- Security Engineers
+- Blue Team Professionals
 
-## Investigations
+Understanding packet behavior helps security analysts detect:
 
-- Traffic Investigation 001 – Network Traffic Fundamentals
-- Traffic Investigation 002 – Domain Dependency Analysis
+- Malicious communications
+- DNS abuse
+- Port scanning activity
+- Data exfiltration attempts
+- Command & Control traffic
 
-## Repository Structure
+---
 
-- DNS Analysis
-- TCP Handshake Analysis
-- HTTP Traffic Analysis
-- HTTPS/TLS Analysis
-- Traffic Investigation Reports
+## 🚀 Future Enhancements
+
+### Phase 2
+- Suspicious Traffic Detection
+- Port Scan Identification
+- Alert Generation
+- Threat Classification
+- Traffic Analytics Dashboard
+
+### Phase 3
+- Real-Time Monitoring
+- SIEM Integration
+- Automated Alerting
+- Threat Intelligence Correlation
+
+---
+
+## 👨‍💻 Author
+
+**Pugazhenthi Amulraj**
+
+Cybersecurity Student | SOC Analyst in Training | Network Security | SIEM | Linux
+
+GitHub:
+https://github.com/pugazh-10
+
+LinkedIn:
+(Add your LinkedIn URL)
+
+---
+
+⭐ If you found this project useful, consider starring the repository.
