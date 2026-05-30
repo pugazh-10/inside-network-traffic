@@ -86,7 +86,7 @@ Analyze TCP communication and session establishment.
 
 ## Screenshot
 
-![TCP Analysis](screenshots/tcp-analysis.png)
+![TCP Analysis](screenshots/tcp-handshake.png)
 
 ## Findings
 
