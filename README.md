@@ -1,26 +1,25 @@
 # 🔍 Inside Network Traffic
 
-> A hands-on cybersecurity project focused on analyzing network traffic using Wireshark to understand communication patterns, protocols, and suspicious network behavior.
-
-![Wireshark](screenshots/dns-analysis.png)
+> A hands-on Network Traffic Analysis project using Wireshark to investigate DNS, TCP, HTTP, HTTPS, and real-world communication patterns.
 
 ---
 
 ## 📌 Project Overview
 
-This project documents practical network traffic investigations performed using Wireshark.
+This repository documents my practical journey into Network Traffic Analysis using Wireshark.
 
-The objective is to develop the mindset and workflow of a Security Operations Center (SOC) analyst by examining packet captures, identifying protocols, and investigating network communications.
+The goal is to understand how cybersecurity analysts inspect packet captures, identify communication patterns, investigate protocols, and analyze network behavior.
 
 ---
 
-## 🎯 Learning Objectives
+## 🎯 Objectives
 
-- Understand packet-level network communication
-- Analyze DNS, TCP, HTTP, and HTTPS traffic
-- Investigate client-server interactions
-- Identify suspicious network behavior
-- Develop packet analysis skills used in SOC environments
+- Understand packet-level communication
+- Analyze DNS traffic
+- Investigate TCP connections
+- Examine HTTP and HTTPS sessions
+- Learn packet filtering techniques
+- Develop network investigation skills used in SOC environments
 
 ---
 
@@ -28,104 +27,184 @@ The objective is to develop the mindset and workflow of a Security Operations Ce
 
 | Tool | Purpose |
 |--------|----------|
-| Wireshark | Packet capture & analysis |
-| Windows | Analysis environment |
-| DNS | Name resolution analysis |
-| TCP | Transport-layer analysis |
-| HTTP/HTTPS | Web traffic investigation |
+| Wireshark | Packet Capture & Analysis |
+| Windows | Analysis Environment |
+| DNS | Name Resolution Analysis |
+| TCP | Transport Analysis |
+| HTTP | Web Traffic Analysis |
+| HTTPS | Secure Communication Analysis |
 
 ---
 
-## 📂 Investigation Reports
+# 📂 Investigation Index
 
-### Investigation 001 – DNS Traffic Analysis
+| Investigation | Description |
+|--------------|-------------|
+| Investigation 001 | DNS Traffic Analysis |
+| Investigation 002 | TCP Session Analysis |
+| Investigation 003 | HTTP Traffic Analysis |
+| Investigation 004 | HTTPS Traffic Analysis |
 
-**Objective**
-- Examine DNS requests and responses
-- Identify domain resolution process
-- Understand DNS packet structure
+---
 
-**Findings**
-- Observed DNS query traffic
-- Analyzed response records
-- Traced hostname resolution process
+# 🌐 Investigation 001 – DNS Traffic Analysis
 
-📸 Screenshot:
+## Objective
+
+Understand domain name resolution and DNS packet structure.
+
+## Activities Performed
+
+- Captured DNS requests
+- Observed DNS responses
+- Identified queried domains
+- Examined packet details
+
+## Screenshot
 
 ![DNS Analysis](screenshots/dns-analysis.png)
 
+## Findings
+
+- DNS converts domain names into IP addresses.
+- Multiple DNS queries are generated during website access.
+- Query and response packets can be easily identified in Wireshark.
+
 ---
 
-### Investigation 002 – HTTPS Traffic Analysis
+# 🔗 Investigation 002 – TCP Session Analysis
 
-**Objective**
-- Inspect encrypted web communications
-- Analyze TLS handshakes
-- Identify source and destination communication
+## Objective
 
-**Findings**
-- HTTPS sessions observed
-- TLS negotiation captured
-- Traffic metadata analyzed
+Analyze TCP communication and session establishment.
 
-📸 Screenshot:
+## Activities Performed
+
+- Inspected TCP packets
+- Observed source and destination ports
+- Analyzed session behavior
+
+## Screenshot
+
+![TCP Analysis](screenshots/tcp-analysis.png)
+
+## Findings
+
+- TCP provides reliable communication.
+- Sessions contain source and destination endpoints.
+- Packet flow can be tracked throughout the connection.
+
+---
+
+# 🌍 Investigation 003 – HTTP Traffic Analysis
+
+## Objective
+
+Inspect unencrypted web traffic.
+
+## Activities Performed
+
+- Captured HTTP packets
+- Identified requests and responses
+- Analyzed web communication flow
+
+## Screenshot
+
+![HTTP Analysis](screenshots/http-analysis.png)
+
+## Findings
+
+- HTTP data is visible in plaintext.
+- Requests and responses can be inspected directly.
+- Useful for understanding web communication mechanisms.
+
+---
+
+# 🔒 Investigation 004 – HTTPS Traffic Analysis
+
+## Objective
+
+Analyze encrypted web communications.
+
+## Activities Performed
+
+- Captured HTTPS packets
+- Observed TLS handshakes
+- Examined encrypted traffic behavior
+
+## Screenshot
 
 ![HTTPS Analysis](screenshots/https-analysis.png)
 
+## Findings
+
+- HTTPS encrypts application data.
+- TLS handshakes establish secure communication.
+- Packet metadata remains visible while payloads stay encrypted.
+
 ---
 
-## 📊 Key Protocols Observed
+# 📊 Protocols Observed
 
 | Protocol | Purpose |
 |----------|---------|
-| DNS | Domain resolution |
-| TCP | Reliable communication |
-| HTTP | Web traffic |
-| HTTPS | Encrypted web traffic |
-| TLS | Secure communication |
+| DNS | Domain Resolution |
+| TCP | Reliable Transport |
+| HTTP | Web Communication |
+| HTTPS | Secure Web Communication |
+| TLS | Encryption Layer |
 
 ---
 
-## 🔐 Cybersecurity Relevance
+# 🔐 Cybersecurity Relevance
 
-Network traffic analysis is a fundamental skill for:
+Network Traffic Analysis is a fundamental skill for:
 
 - SOC Analysts
+- Security Analysts
 - Incident Responders
 - Threat Hunters
-- Security Engineers
-- Blue Team Professionals
+- Blue Team Engineers
 
-Understanding packet behavior helps security analysts detect:
+Traffic inspection helps identify:
 
 - Malicious communications
-- DNS abuse
-- Port scanning activity
-- Data exfiltration attempts
-- Command & Control traffic
+- DNS anomalies
+- Reconnaissance activity
+- Suspicious connections
+- Potential threat indicators
 
 ---
 
-## 🚀 Future Enhancements
+# 🚀 Phase 2 Roadmap
 
-### Phase 2
+Planned enhancements:
+
 - Suspicious Traffic Detection
-- Port Scan Identification
+- Port Scan Detection
 - Alert Generation
 - Threat Classification
-- Traffic Analytics Dashboard
-
-### Phase 3
-- Real-Time Monitoring
-- SIEM Integration
-- Automated Alerting
-- Threat Intelligence Correlation
+- Packet Analytics Dashboard
+- Security Event Logging
 
 ---
 
-## 👨‍💻 Author
+# 📚 Learning Outcomes
 
-**Pugazhenthi Amulraj**
+Through this project I learned:
+
+- Packet capture techniques
+- Protocol identification
+- DNS investigation workflow
+- TCP communication analysis
+- HTTP/HTTPS traffic inspection
+- Network investigation methodology
+
+---
+
+# 👨‍💻 Author
+
+### Pugazhenthi Amulraj
 
 Cybersecurity Student | SOC Analyst in Training | Network Security | SIEM | Linux
 
@@ -133,8 +212,8 @@ GitHub:
 https://github.com/pugazh-10
 
 LinkedIn:
-(Add your LinkedIn URL)
+https://www.linkedin.com/in/pugazhenthi-amulraj
 
 ---
 
-⭐ If you found this project useful, consider starring the repository.
+⭐ If you found this repository useful, consider giving it a star.
